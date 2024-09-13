@@ -1,5 +1,5 @@
 # Use a imagem oficial do Node.js 20 como base
-FROM bitnami/postgresql:13.16.0
+FROM node:20
 
 # Crie um diretório de trabalho
 WORKDIR /app
@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Instale as dependências
-RUN npm i
+RUN npm ci
 
 # Copie o restante do código fonte
 COPY . .
