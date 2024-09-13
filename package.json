@@ -6,7 +6,6 @@
         "start": "node ./dist/http/server.js",
         "dev": "tsx watch --env-file .env ./src/http/server.ts",
         "build": "tsup src",
-        "postbuild": "cp src/docs/swagger.json dist/docs/ && rm dist/docs/swagger.js",
         "seed": "tsx --env-file .env ./src/db/seed.ts"
     },
     "keywords": [],

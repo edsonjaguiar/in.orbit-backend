@@ -33,7 +33,7 @@
 #### Backend
 ```zsh
     # Clonando o repositório em sua máquina
-    $ git clone https://github.com/edsonjaguiar/ignite-lab-react
+    $ git clone https://github.com/edsonjaguiar/in.orbit-backend
 
     # Acessando o repositório
     $ cd ignite-lab-react   
@@ -41,8 +41,7 @@
     # Instalando as dependências
     $ npm i
 
-    # Renomeie o .env.example para .env e substitua pela informação abaixo
-    $ DATABASE_URL="postgresql://docker@localhost:5432/inorbit"
+    # Renomeie o .env.example para .env
 
     # Iniciando o docker
     $ docker compose up
