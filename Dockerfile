@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build && npx drizzle-kit migrate
 
 # Exponha a porta que a aplicação usará
-EXPOSE 3000
+EXPOSE 3333
 
 # Defina o comando padrão para iniciar a aplicação
 CMD [ "npm", "start" ]
