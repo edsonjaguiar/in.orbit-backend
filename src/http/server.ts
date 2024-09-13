@@ -24,11 +24,14 @@ app.setValidatorCompiler(validatorCompiler)
 app.setSerializerCompiler(serializerCompiler)
 
 const swaggerJson = JSON.parse(
-    fs.readFileSync(path.join(__dirname, '../docs/swagger.json'), 'utf-8')
+    fs.readFileSync(
+        path.join(__dirname, '.../../../../docs/swagger.json'),
+        'utf-8'
+    )
 )
 
 app.register(fastifyStatic, {
-    root: path.join(__dirname, '../docs'),
+    root: path.join(__dirname, '../../docs'),
     prefix: '/docs',
 })
 

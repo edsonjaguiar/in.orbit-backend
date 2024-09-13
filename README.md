@@ -30,13 +30,12 @@
 
 ### 〽️ Getting started
 
-#### Backend
 ```zsh
     # Clonando o repositório em sua máquina
     $ git clone https://github.com/edsonjaguiar/in.orbit-backend
 
     # Acessando o repositório
-    $ cd ignite-lab-react   
+    $ cd in.orbit-backend  
 
     # Instalando as dependências
     $ npm i
