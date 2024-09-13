@@ -14,7 +14,7 @@ RUN npm ci
 COPY . .
 
 # Compile o TypeScript, se necessário
-RUN npm run build
+RUN npm run build && npx drizzle-kit migrate
 
 # Exponha a porta que a aplicação usará
 EXPOSE 3000
