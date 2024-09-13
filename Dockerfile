@@ -1,5 +1,5 @@
 # Use a imagem oficial do Node.js 20 como base
-FROM node:20
+FROM bitnami/postgresql:13.16.0
 
 # Crie um diretório de trabalho
 WORKDIR /app
