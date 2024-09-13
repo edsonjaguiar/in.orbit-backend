@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Instale as dependências
-RUN npm ci && npx drizzle-kit migrate
+RUN npm ci
 
 # Copie o restante do código fonte
 COPY . .
